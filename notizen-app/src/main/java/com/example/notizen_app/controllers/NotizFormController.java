@@ -38,7 +38,7 @@ public class NotizFormController {
     public String deleteNotiz(@PathVariable("id") Long id, Model model){
         // check if notiz is there
         Notiz notiz = notizService
-                .getById(id)
+                .getNotizById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Notiz id: " + id + "not found"));
 
         notizService.delete(notiz);
@@ -52,7 +52,7 @@ public class NotizFormController {
     public String editNotiz(@PathVariable("id") Long id, Model model){
         // check if notiz is there
         Notiz notiz = notizService
-                .getById(id)
+                .getNotizById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Notiz id: " + id + "not found"));
 
         model.addAttribute("notiz", notiz); // translates name, how it appears in html
@@ -67,7 +67,7 @@ public class NotizFormController {
     @PostMapping("/notiz_update/{id}")
     public String updateNotizItem(@PathVariable("id") Long id, @Valid Notiz new_notiz, BindingResult bindingResult, Model model){
         Notiz notiz = notizService
-                .getById(id)
+                .getNotizById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Notiz id: " + id + "not found"));
 
         // copy over what the User inputs

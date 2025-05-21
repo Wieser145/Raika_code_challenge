@@ -15,7 +15,7 @@ public class NotizController {
     @GetMapping("/")
     public ModelAndView index() {
         ModelAndView modelAndView = new ModelAndView("index");
-        modelAndView.addObject("notizen", notizService.getAll());
+        modelAndView.addObject("notizen", notizService.getAllNotizen());
         return modelAndView;
     }
 }

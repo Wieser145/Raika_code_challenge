@@ -2,8 +2,7 @@ package com.example.notizen_app.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 import java.time.Instant;
@@ -15,6 +14,9 @@ import java.time.Instant;
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Table(name="notizen_table")
 public class Notiz implements Serializable {
 

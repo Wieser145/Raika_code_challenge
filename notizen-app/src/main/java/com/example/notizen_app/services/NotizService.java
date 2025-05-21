@@ -22,11 +22,11 @@ public class NotizService {
      *
      * @return a List of all Notizen
      */
-    public Iterable<Notiz> getAll() {
+    public Iterable<Notiz> getAllNotizen() {
         return notizRepository.findAll();
     }
 
-    public Optional<Notiz> getById(Long id){
+    public Optional<Notiz> getNotizById(Long id){
         return notizRepository.findById(id);
     }
 
