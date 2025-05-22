@@ -19,18 +19,20 @@
             <h2>Add a new Notiz</h2>
             <form action="#" th:action="@{/notizFill}" th:object="${notiz}" method="POST">
                 <div class="form-group">
+                    <label for="description">Title</label>
+                    <input class="form-control"
+                           type="text"
+                           th:field="*{title}"
+                           id="title"
+                           placeholder="Title"
+                    >
+
                     <label for="description">Description</label>
                     <input class="form-control"
                            type="text"
                            th:field="*{description}"
                            id="description"
                            placeholder="Description"
-                    >
-                    <input class="form-control"
-                           type="text"
-                           th:field="*{title}"
-                           id="title"
-                           placeholder="Title"
                     >
 
                     <button type="submit" class="btn btn-outline-success">
