@@ -14,6 +14,9 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * Create test for the notizenServie to retrieve all (mock) notizen
+ */
 @SpringBootTest
 @ActiveProfiles("test")                                 // load application-test.properties
 @AutoConfigureTestDatabase(replace = Replace.NONE)      // don’t override your test DB

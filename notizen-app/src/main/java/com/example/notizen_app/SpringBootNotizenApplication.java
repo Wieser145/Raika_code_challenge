@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBoot3TodoApplication {
+public class SpringBootNotizenApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBoot3TodoApplication.class, args);
+		SpringApplication.run(SpringBootNotizenApplication.class, args);
 	}
 
 }

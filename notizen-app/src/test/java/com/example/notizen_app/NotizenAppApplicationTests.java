@@ -19,6 +19,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Optional;
 
+/**
+ * Create test for retrieving attributes of a Notiz
+ */
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
 public class NotizenAppApplicationTests {

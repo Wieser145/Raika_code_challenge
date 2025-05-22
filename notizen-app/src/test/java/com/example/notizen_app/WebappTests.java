@@ -9,6 +9,9 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 
+/**
+ * Create test for the Webapp, if the connection to /create-notiz is possible
+ */
 @SpringBootTest
 @AutoConfigureMockMvc
 public class WebappTests {
