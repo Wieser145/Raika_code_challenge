@@ -1,6 +1,6 @@
 # Notizen App
 
-A simple web application for creating, editing, and deleting notes (“Notizen”), built with Spring Boot, Spring Data JPA, and H2.
+A simple web application for creating, editing, and deleting notes (“Notizen”), built with Spring Boot, Spring Data JPA, and H2. For the frontend thymleaf and bootstrap as CSS is used.
 
 ---
 
@@ -40,3 +40,4 @@ A simple web application for creating, editing, and deleting notes (“Notizen�
 1. **Clone the repo**
    ```bash
    git clone https://github.com/Wieser145/Raika_code_challenge.git
+   cd notizen-app
