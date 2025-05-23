@@ -39,5 +39,4 @@ A simple web application for creating, editing, and deleting notes (â€œNotizenâ€
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/notizen-app.git
-   cd notizen-app
+   git clone https://github.com/Wieser145/Raika_code_challenge.git
